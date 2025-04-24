@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding-top: 20px;
   text-align: center;
+  width: 100%;
 }
 
 .logo {
@@ -11,32 +11,34 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.navbar {
+  width: 100% !important;
+  padding: 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav .nav-link {
+  font-family: 'Merriweather', serif; 
+  font-size: 1.2rem;  
+  font-weight: 700;  
+  letter-spacing: 0.5px;  
+  color: #ffffff92; 
+  transition: color 0.3s ease; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar-nav .nav-link:hover {
+  color: #ffffff; 
+  text-decoration: underline;
 }
 
-.card {
-  padding: 2em;
+.navbar-nav .nav-link.active {
+  color: #ffffff; 
 }
 
-.read-the-docs {
-  color: #888;
+.navbar-nav .nav-link:hover.text-danger {
+  color: #ff0000 !important; 
+}
+
+.navbar-nav .nav-link.active.text-danger {
+  color: #ff0000 !important; 
 }

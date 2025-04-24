@@ -3,17 +3,22 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    // <nav className='navbar navbar-dark bg-primary'>
-    //   <NavLink className></NavLink>
-    // </nav>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
-      <div className="container-fluid">
-        {/* <a className="navbar-brand" href="/">Home</a> */}
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span className="navbar-toggler-icon"></span>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-success mb-4 shadow-sm w-100">
+      <div className="container-fluid w-100">
+        <NavLink to="/" className="navbar-brand fw-bold">
+          <img src="assets/images/logo.png" alt="Logo" height="50" /> 
+        </NavLink>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
+        > 
+          <span className="visually-hidden">Toggle navigation</span>  
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <NavLink 
                 to="/proveedores" 
@@ -42,7 +47,7 @@ const NavBar = () => {
             <li className="nav-item">
               <NavLink 
                 to="/logout" 
-                className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                className={({ isActive }) => isActive ? "nav-link active text-danger" : "nav-link text-danger"}
               >
                 Logout
               </NavLink>
@@ -54,4 +59,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default NavBar;
