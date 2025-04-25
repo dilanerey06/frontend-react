@@ -32,10 +32,14 @@ cd frontend-react
 npm install
 ```
 
-### 3️⃣ Inicia el servidor y accede a la aplicación
+### 3️⃣ Inicia el servidor
 ```bash
-[npm run dev](http://localhost:5173)
+npm run dev
 ```
+
+### 4️⃣ Accede a la aplicación
+[http://localhost:5173](http://localhost:5173)
+
 
 ## 👤 Autores
 - Dilan Esteban Rey Sepulveda - 2190397
